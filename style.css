@@ -90,8 +90,12 @@ header {
   text-align: center;
 }
 
-section {
-  text-indent: 1.25rem;
+section p {
+  text-indent: 1.5em;
+}
+
+section p:has(+ol) {
+  text-indent: 0;
 }
 
 a:visited {
@@ -140,7 +144,6 @@ ol {
   padding-left: 0;
 }
 
-/* Style your navigation menu so that it harmonizes with the page. */
 nav ul {
   list-style-type: none;
   padding-left: 0;
