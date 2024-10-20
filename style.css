@@ -44,32 +44,117 @@ header, footer {
 
 /* WRITE YOUR CODE BELOW HERE */
 
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap');
+@font-face {
+  font-family: "Oswald";
+  src: url("Oswald-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Old Standard TT";
+  src: url("OldStandardTT-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Old Standard TT";
+  src: url("OldStandardTT-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
 
 /* <uniquifier>: Use a unique and descriptive class name
    <weight>: Use a value from 200 to 700 */
 
-.oswald-font {
+h1 {
   font-family: "Oswald", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
+  font-weight: 900;
+  font-size: 3rem;
+  letter-spacing: 0.05em;
 }
 
-.old-standard-tt-regular {
-  font-family: "Old Standard TT", system-ui;
-  font-weight: 400;
-  font-style: normal;
+h2 {
+  font-family: "Oswald", system-ui;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
 }
 
-.old-standard-tt-bold {
+body {
   font-family: "Old Standard TT", system-ui;
+  font-size: 1em;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  word-spacing: 0.0125em;
+}
+
+header {
+  text-align: center;
+}
+
+section {
+  text-indent: 1.25rem;
+}
+
+a:visited {
+  color: rgb(199, 86, 148);
+}
+
+a:focus {
+  color: #a66;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(238, 146, 146);
+  text-decoration: none;  
+}
+
+a:active {
+  color: rgb(199, 86, 148);
+  border: 1px solid rgb(199, 86, 148);
+}
+
+a[href^="http"]::after {
+  background-image: url("external-link-52.png");
+  background-size: 0.8em 0.8em;
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  content: "";
+  margin-left: 0.25rem;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+li {
+  line-height: 1.5;
+  padding-left: 1.5rem;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+/* Style your navigation menu so that it harmonizes with the page. */
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav li {
+  border: 1px solid #a66;
+  padding: 1.2rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+nav a {
+  color: #a66;
+  text-decoration: none;
   font-weight: 700;
-  font-style: normal;
-}
-
-.old-standard-tt-regular-italic {
-  font-family: "Old Standard TT", system-ui;
-  font-weight: 400;
-  font-style: italic;
 }
